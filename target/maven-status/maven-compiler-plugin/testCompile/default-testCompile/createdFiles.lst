@@ -1,0 +1,3 @@
+com\lab\recruitment\GeneratePasswordHash.class
+com\lab\recruitment\PasswordEncodingTest.class
+com\lab\recruitment\TestPasswordEncoding.class

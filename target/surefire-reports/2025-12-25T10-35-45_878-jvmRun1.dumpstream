@@ -1,0 +1,273 @@
+# Created at 2025-12-25T10:35:48.799
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:386)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+
+# Created at 2025-12-25T10:35:49.316
+Unexpected IOException with stream: 2025-12-25 10:35:49.315 DEBUG 21204 --- [           main] .PrePostAnnotationSecurityMetadataSource : @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.assignAdminToLab(java.util.Map)
+
+
+# Created at 2025-12-25T10:35:49.318
+Unexpected IOException with stream: 2025-12-25 10:35:49.318 DEBUG 21204 --- [           main] m.DelegatingMethodSecurityMetadataSource : Caching method [CacheKey[com.lab.recruitment.controller.AdminManagementController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.assignAdminToLab(java.util.Map)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+
+
+# Created at 2025-12-25T10:35:49.318
+Unexpected IOException with stream: 2025-12-25 10:35:49.318 DEBUG 21204 --- [           main] .PrePostAnnotationSecurityMetadataSource : @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.getAllAdminsWithLabs()
+
+
+# Created at 2025-12-25T10:35:49.318
+Unexpected IOException with stream: 2025-12-25 10:35:49.318 DEBUG 21204 --- [           main] m.DelegatingMethodSecurityMetadataSource : Caching method [CacheKey[com.lab.recruitment.controller.AdminManagementController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.getAllAdminsWithLabs()]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+
+
+# Created at 2025-12-25T10:35:49.352
+Unexpected IOException with stream: 2025-12-25 10:35:49.351 DEBUG 21204 --- [           main] .PrePostAnnotationSecurityMetadataSource : @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.audit(java.lang.Long,java.lang.Integer,java.lang.String)
+
+
+# Created at 2025-12-25T10:35:49.352
+Unexpected IOException with stream: 2025-12-25 10:35:49.352 DEBUG 21204 --- [           main] m.DelegatingMethodSecurityMetadataSource : Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.audit(java.lang.Long,java.lang.Integer,java.lang.String)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+
+
+# Created at 2025-12-25T10:35:49.354
+Unexpected IOException with stream: 2025-12-25 10:35:49.354 DEBUG 21204 --- [           main] .PrePostAnnotationSecurityMetadataSource : @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.admit(java.lang.Long)
+
+
+# Created at 2025-12-25T10:35:49.354
+Unexpected IOException with stream: 2025-12-25 10:35:49.354 DEBUG 21204 --- [           main] m.DelegatingMethodSecurityMetadataSource : Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.admit(java.lang.Long)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+
+
+# Created at 2025-12-25T10:35:49.355
+Unexpected IOException with stream: 2025-12-25 10:35:49.354 DEBUG 21204 --- [           main] .PrePostAnnotationSecurityMetadataSource : @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getStatistics(java.lang.Long)
+
+
+# Created at 2025-12-25T10:35:49.355
+Unexpected IOException with stream: 2025-12-25 10:35:49.355 DEBUG 21204 --- [           main] m.DelegatingMethodSecurityMetadataSource : Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getStatistics(java.lang.Long)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+
+
+# Created at 2025-12-25T10:35:49.355
+Unexpected IOException with stream: 2025-12-25 10:35:49.355 DEBUG 21204 --- [           main] .PrePostAnnotationSecurityMetadataSource : @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.Long,java.lang.String,java.lang.String,java.lang.Integer)
+
+
+# Created at 2025-12-25T10:35:49.357
+Unexpected IOException with stream: 2025-12-25 10:35:49.357 DEBUG 21204 --- [           main] m.DelegatingMethodSecurityMetadataSource : Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.Long,java.lang.String,java.lang.String,java.lang.Integer)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+
+
+# Created at 2025-12-25T10:35:49.357
+Unexpected IOException with stream: 2025-12-25 10:35:49.357 DEBUG 21204 --- [           main] .PrePostAnnotationSecurityMetadataSource : @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'STUDENT\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getMyDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Integer)
+
+
+# Created at 2025-12-25T10:35:49.358
+Unexpected IOException with stream: 2025-12-25 10:35:49.357 DEBUG 21204 --- [           main] m.DelegatingMethodSecurityMetadataSource : Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getMyDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Integer)]] with attributes [[authorize: 'hasRole('STUDENT')', filter: 'null', filterTarget: 'null']]
+
+
+# Created at 2025-12-25T10:35:49.358
+Unexpected IOException with stream: 2025-12-25 10:35:49.358 DEBUG 21204 --- [           main] .PrePostAnnotationSecurityMetadataSource : @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'STUDENT\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.deliver(com.lab.recruitment.dto.DeliveryDTO)
+
+
+# Created at 2025-12-25T10:35:49.358
+Unexpected IOException with stream: 2025-12-25 10:35:49.358 DEBUG 21204 --- [           main] m.DelegatingMethodSecurityMetadataSource : Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.deliver(com.lab.recruitment.dto.DeliveryDTO)]] with attributes [[authorize: 'hasRole('STUDENT')', filter: 'null', filterTarget: 'null']]
+
+
+# Created at 2025-12-25T10:35:49.366
+Unexpected IOException with stream: 2025-12-25 10:35:49.366 DEBUG 21204 --- [           main] .PrePostAnnotationSecurityMetadataSource : @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.createLab(com.lab.recruitment.entity.Lab)
+
+
+# Created at 2025-12-25T10:35:49.366
+Unexpected IOException with stream: 2025-12-25 10:35:49.366 DEBUG 21204 --- [           main] m.DelegatingMethodSecurityMetadataSource : Caching method [CacheKey[com.lab.recruitment.controller.LabController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.createLab(com.lab.recruitment.entity.Lab)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+
+
+# Created at 2025-12-25T10:35:49.368
+Unexpected IOException with stream: 2025-12-25 10:35:49.368 DEBUG 21204 --- [           main] .PrePostAnnotationSecurityMetadataSource : @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.updateLab(java.lang.Long,com.lab.recruitment.entity.Lab)
+
+
+# Created at 2025-12-25T10:35:49.368
+Unexpected IOException with stream: 2025-12-25 10:35:49.368 DEBUG 21204 --- [           main] m.DelegatingMethodSecurityMetadataSource : Caching method [CacheKey[com.lab.recruitment.controller.LabController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.updateLab(java.lang.Long,com.lab.recruitment.entity.Lab)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+
+
+# Created at 2025-12-25T10:35:49.370
+Unexpected IOException with stream: 2025-12-25 10:35:49.370 DEBUG 21204 --- [           main] .PrePostAnnotationSecurityMetadataSource : @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.getLabsWithAdmin()
+
+
+# Created at 2025-12-25T10:35:49.370
+Unexpected IOException with stream: 2025-12-25 10:35:49.370 DEBUG 21204 --- [           main] m.DelegatingMethodSecurityMetadataSource : Caching method [CacheKey[com.lab.recruitment.controller.LabController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.getLabsWithAdmin()]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+
+
+# Created at 2025-12-25T10:35:49.371
+Unexpected IOException with stream: 2025-12-25 10:35:49.370 DEBUG 21204 --- [           main] .PrePostAnnotationSecurityMetadataSource : @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.deleteLab(java.lang.Long)
+
+
+# Created at 2025-12-25T10:35:49.372
+Unexpected IOException with stream: 2025-12-25 10:35:49.371 DEBUG 21204 --- [           main] m.DelegatingMethodSecurityMetadataSource : Caching method [CacheKey[com.lab.recruitment.controller.LabController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.deleteLab(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+
+
+# Created at 2025-12-25T10:35:49.376
+Unexpected IOException with stream: 2025-12-25 10:35:49.374 DEBUG 21204 --- [           main] .PrePostAnnotationSecurityMetadataSource : @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.updateAdmin(java.lang.Long,com.lab.recruitment.entity.User)
+
+
+# Created at 2025-12-25T10:35:49.376
+Unexpected IOException with stream: 2025-12-25 10:35:49.376 DEBUG 21204 --- [           main] m.DelegatingMethodSecurityMetadataSource : Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.updateAdmin(java.lang.Long,com.lab.recruitment.entity.User)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+
+
+# Created at 2025-12-25T10:35:49.377
+Unexpected IOException with stream: 2025-12-25 10:35:49.376 DEBUG 21204 --- [           main] .PrePostAnnotationSecurityMetadataSource : @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.deleteAdmin(java.lang.Long)
+
+
+# Created at 2025-12-25T10:35:49.377
+Unexpected IOException with stream: 2025-12-25 10:35:49.377 DEBUG 21204 --- [           main] m.DelegatingMethodSecurityMetadataSource : Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.deleteAdmin(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+
+
+# Created at 2025-12-25T10:35:49.377
+Unexpected IOException with stream: 2025-12-25 10:35:49.377 DEBUG 21204 --- [           main] .PrePostAnnotationSecurityMetadataSource : @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.addAdmin(com.lab.recruitment.entity.User)
+
+
+# Created at 2025-12-25T10:35:49.379
+Unexpected IOException with stream: 2025-12-25 10:35:49.379 DEBUG 21204 --- [           main] m.DelegatingMethodSecurityMetadataSource : Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.addAdmin(com.lab.recruitment.entity.User)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+
+
+# Created at 2025-12-25T10:35:49.380
+Unexpected IOException with stream: 2025-12-25 10:35:49.379 DEBUG 21204 --- [           main] .PrePostAnnotationSecurityMetadataSource : @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getAllAdmins()
+
+
+# Created at 2025-12-25T10:35:49.381
+Unexpected IOException with stream: 2025-12-25 10:35:49.380 DEBUG 21204 --- [           main] m.DelegatingMethodSecurityMetadataSource : Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getAllAdmins()]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+
+
+# Created at 2025-12-25T10:35:49.382
+Unexpected IOException with stream: 2025-12-25 10:35:49.381 DEBUG 21204 --- [           main] .PrePostAnnotationSecurityMetadataSource : @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getAdminDetail(java.lang.Long)
+
+
+# Created at 2025-12-25T10:35:49.383
+Unexpected IOException with stream: 2025-12-25 10:35:49.382 DEBUG 21204 --- [           main] m.DelegatingMethodSecurityMetadataSource : Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getAdminDetail(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+
+
+# Created at 2025-12-25T10:35:49.383
+Unexpected IOException with stream: 2025-12-25 10:35:49.383 DEBUG 21204 --- [           main] .PrePostAnnotationSecurityMetadataSource : @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getStudentList()
+
+
+# Created at 2025-12-25T10:35:49.385
+Unexpected IOException with stream: 2025-12-25 10:35:49.383 DEBUG 21204 --- [           main] m.DelegatingMethodSecurityMetadataSource : Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getStudentList()]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+
+
+# Created at 2025-12-25T10:35:49.630
+Unexpected IOException with stream: 2025-12-25 10:35:49.628 DEBUG 21204 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/auth/login']
+
+
+# Created at 2025-12-25T10:35:49.631
+Unexpected IOException with stream: 2025-12-25 10:35:49.630 DEBUG 21204 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/auth/register']
+
+
+# Created at 2025-12-25T10:35:49.631
+Unexpected IOException with stream: 2025-12-25 10:35:49.631 DEBUG 21204 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/user/login']
+
+
+# Created at 2025-12-25T10:35:49.631
+Unexpected IOException with stream: 2025-12-25 10:35:49.631 DEBUG 21204 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/user/register']
+
+
+# Created at 2025-12-25T10:35:49.633
+Unexpected IOException with stream: 2025-12-25 10:35:49.631 DEBUG 21204 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/api/auth/login']
+
+
+# Created at 2025-12-25T10:35:49.633
+Unexpected IOException with stream: 2025-12-25 10:35:49.633 DEBUG 21204 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/api/auth/register']
+
+
+# Created at 2025-12-25T10:35:49.633
+Unexpected IOException with stream: 2025-12-25 10:35:49.633 DEBUG 21204 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/api/user/login']
+
+
+# Created at 2025-12-25T10:35:49.633
+Unexpected IOException with stream: 2025-12-25 10:35:49.633 DEBUG 21204 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/api/user/register']
+
+
+# Created at 2025-12-25T10:35:49.634
+Unexpected IOException with stream: 2025-12-25 10:35:49.634 DEBUG 21204 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/file/upload']
+
+
+# Created at 2025-12-25T10:35:49.634
+Unexpected IOException with stream: 2025-12-25 10:35:49.634 DEBUG 21204 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/uploads/**']
+
+
+# Created at 2025-12-25T10:35:49.636
+Unexpected IOException with stream: 2025-12-25 10:35:49.634 DEBUG 21204 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/labs/list']
+
+
+# Created at 2025-12-25T10:35:49.636
+Unexpected IOException with stream: 2025-12-25 10:35:49.636 DEBUG 21204 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/labs/{id}']
+
+
+# Created at 2025-12-25T10:35:49.638
+Unexpected IOException with stream: 2025-12-25 10:35:49.636 DEBUG 21204 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAuthority('ROLE_SUPER_ADMIN')] for Ant [pattern='/user/admin/**']
+
+
+# Created at 2025-12-25T10:35:49.638
+Unexpected IOException with stream: 2025-12-25 10:35:49.638 DEBUG 21204 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAuthority('ROLE_SUPER_ADMIN')] for Ant [pattern='/user/student/list']
+
+
+# Created at 2025-12-25T10:35:49.638
+Unexpected IOException with stream: 2025-12-25 10:35:49.638 DEBUG 21204 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAuthority('ROLE_SUPER_ADMIN')] for Ant [pattern='/labs/list-with-admin']
+
+
+# Created at 2025-12-25T10:35:49.639
+Unexpected IOException with stream: 2025-12-25 10:35:49.638 DEBUG 21204 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAnyAuthority('ROLE_ADMIN','ROLE_SUPER_ADMIN')] for Ant [pattern='/admin/**']
+
+
+# Created at 2025-12-25T10:35:49.639
+Unexpected IOException with stream: 2025-12-25 10:35:49.639 DEBUG 21204 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+
+
+# Created at 2025-12-25T10:35:49.654
+Unexpected IOException with stream: 2025-12-25 10:35:49.654  INFO 21204 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3d3a1903, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@26582ca, org.springframework.security.web.context.SecurityContextPersistenceFilter@b950f82, org.springframework.security.web.header.HeaderWriterFilter@79afa369, org.springframework.web.filter.CorsFilter@153cb763, org.springframework.security.web.authentication.logout.LogoutFilter@5e0c4f21, com.lab.recruitment.config.JwtAuthenticationFilter@2c3158e0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a1a3468, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59d0cdb6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@412ebe64, org.springframework.security.web.session.SessionManagementFilter@6c33da7a, org.springframework.security.web.access.ExceptionTranslationFilter@383cb5ce, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1f78d415]
+
+
+# Created at 2025-12-25T10:35:50.078
+Unexpected IOException with stream: 2025-12-25 10:35:50.077 DEBUG 21204 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+
+
+# Created at 2025-12-25T10:35:50.249
+Unexpected IOException with stream: 2025-12-25 10:35:50.249 DEBUG 21204 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 38 mappings in 'requestMappingHandlerMapping'
+
+
+# Created at 2025-12-25T10:35:50.299
+Unexpected IOException with stream: 2025-12-25 10:35:50.299 DEBUG 21204 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /uploads/**] in 'resourceHandlerMapping'
+
+
+# Created at 2025-12-25T10:35:50.316
+Unexpected IOException with stream: 2025-12-25 10:35:50.316 DEBUG 21204 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+
+
+# Created at 2025-12-25T10:35:50.556
+Unexpected IOException with stream: 2025-12-25 10:35:50.556  INFO 21204 --- [           main] c.lab.recruitment.PasswordEncodingTest   : Started PasswordEncodingTest in 3.688 seconds (JVM running for 4.352)
+
+
+# Created at 2025-12-25T10:35:50.615
+Unexpected IOException: 5,1,com.lab.recruitment.PasswordEncodingTest,testPasswordEncoding,null,null,null
+
+
+# Created at 2025-12-25T10:35:51.014
+Unexpected IOException with stream: New hash for '123456': $2a$10$g5hfbiAGxHqM1MQQuEkDIOUzwexDjN/M13Tn2AFFFXqo.Tb1SUL4.
+
+
+# Created at 2025-12-25T10:35:51.066
+Unexpected IOException with stream: Does '123456' match existing hash? false
+
+
+# Created at 2025-12-25T10:35:51.119
+Unexpected IOException with stream: Does '123456' match new hash? true
+
+
+# Created at 2025-12-25T10:35:51.173
+Unexpected IOException with stream: Does 'wrong' match existing hash? false
+
+
+# Created at 2025-12-25T10:35:51.183
+Unexpected IOException: 6,1,com.lab.recruitment.PasswordEncodingTest,testPasswordEncoding,null,null,null
+
+
+# Created at 2025-12-25T10:35:51.185
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,com.lab.recruitment.PasswordEncodingTest,null,null,null
+
+

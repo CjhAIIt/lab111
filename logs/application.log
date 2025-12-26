@@ -1,0 +1,1059 @@
+2025-12-25 10:59:57 [main] INFO  c.l.recruitment.PasswordEncodingTest - Starting PasswordEncodingTest using Java 17.0.17 on DELL with PID 2432 (started by 23717 in C:\Users\23717\Desktop\trae3)
+2025-12-25 10:59:57 [main] DEBUG c.l.recruitment.PasswordEncodingTest - Running with Spring Boot v2.7.14, Spring v5.3.29
+2025-12-25 10:59:57 [main] INFO  c.l.recruitment.PasswordEncodingTest - No active profile set, falling back to 1 default profile: "default"
+2025-12-25 10:59:57 [main] DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3b1bb3ab
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.getAdminList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.getAdminList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyAuthority(\'ROLE_ADMIN\', \'ROLE_SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.getUserList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String)
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.getUserList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String)]] with attributes [[authorize: 'hasAnyAuthority('ROLE_ADMIN', 'ROLE_SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.deleteUser(java.lang.Long)
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.deleteUser(java.lang.Long)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.getAllAdminsWithLabs()
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminManagementController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.getAllAdminsWithLabs()]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.getLabAdmin(java.lang.Long)
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminManagementController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.getLabAdmin(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.removeAdminFromLab(java.lang.Long)
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminManagementController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.removeAdminFromLab(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.assignAdminToLab(java.util.Map)
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminManagementController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.assignAdminToLab(java.util.Map)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.canUserBeAdmin(java.lang.Long)
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminManagementController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.canUserBeAdmin(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.audit(java.lang.Long,java.lang.Integer,java.lang.String)
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.audit(java.lang.Long,java.lang.Integer,java.lang.String)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.Long,java.lang.String,java.lang.String,java.lang.Integer)
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.Long,java.lang.String,java.lang.String,java.lang.Integer)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'STUDENT\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getMyDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Integer)
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getMyDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Integer)]] with attributes [[authorize: 'hasRole('STUDENT')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.admit(java.lang.Long)
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.admit(java.lang.Long)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getStatistics(java.lang.Long)
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getStatistics(java.lang.Long)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'STUDENT\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.deliver(com.lab.recruitment.dto.DeliveryDTO)
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.deliver(com.lab.recruitment.dto.DeliveryDTO)]] with attributes [[authorize: 'hasRole('STUDENT')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.deleteLab(java.lang.Long)
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.LabController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.deleteLab(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.getLabsWithAdmin()
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.LabController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.getLabsWithAdmin()]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.createLab(com.lab.recruitment.entity.Lab)
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.LabController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.createLab(com.lab.recruitment.entity.Lab)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.updateLab(java.lang.Long,com.lab.recruitment.entity.Lab)
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.LabController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.updateLab(java.lang.Long,com.lab.recruitment.entity.Lab)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.updateAdmin(java.lang.Long,com.lab.recruitment.entity.User)
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.updateAdmin(java.lang.Long,com.lab.recruitment.entity.User)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.deleteAdmin(java.lang.Long)
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.deleteAdmin(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.addAdmin(com.lab.recruitment.entity.User)
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.addAdmin(com.lab.recruitment.entity.User)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getAdminDetail(java.lang.Long)
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getAdminDetail(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getAllAdmins()
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getAllAdmins()]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getStudentList()
+2025-12-25 10:59:59 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getStudentList()]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 10:59:59 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/auth/login']
+2025-12-25 10:59:59 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/auth/register']
+2025-12-25 10:59:59 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/user/login']
+2025-12-25 10:59:59 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/user/register']
+2025-12-25 10:59:59 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/auth/login']
+2025-12-25 10:59:59 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/auth/register']
+2025-12-25 10:59:59 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/user/login']
+2025-12-25 10:59:59 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/user/register']
+2025-12-25 10:59:59 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/file/upload']
+2025-12-25 10:59:59 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/uploads/**']
+2025-12-25 10:59:59 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/labs/list']
+2025-12-25 10:59:59 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/labs/{id}']
+2025-12-25 10:59:59 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAuthority('ROLE_SUPER_ADMIN')] for Ant [pattern='/user/admin/**']
+2025-12-25 10:59:59 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAuthority('ROLE_SUPER_ADMIN')] for Ant [pattern='/user/student/list']
+2025-12-25 10:59:59 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAuthority('ROLE_SUPER_ADMIN')] for Ant [pattern='/labs/list-with-admin']
+2025-12-25 10:59:59 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAnyAuthority('ROLE_ADMIN','ROLE_SUPER_ADMIN')] for Ant [pattern='/admin/**']
+2025-12-25 10:59:59 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [authenticated] for any request
+2025-12-25 10:59:59 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4962b41e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4fecf308, org.springframework.security.web.context.SecurityContextPersistenceFilter@53eba4b8, org.springframework.security.web.header.HeaderWriterFilter@61f377d1, org.springframework.web.filter.CorsFilter@6282b9f5, org.springframework.security.web.authentication.logout.LogoutFilter@7c5df615, com.lab.recruitment.config.JwtAuthenticationFilter@5b5f9003, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6fa02932, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61608e1a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c11d32, org.springframework.security.web.session.SessionManagementFilter@45592af7, org.springframework.security.web.access.ExceptionTranslationFilter@59096b66, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@781aff8b]
+2025-12-25 11:00:00 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-25 11:00:00 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 38 mappings in 'requestMappingHandlerMapping'
+2025-12-25 11:00:00 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /uploads/**] in 'resourceHandlerMapping'
+2025-12-25 11:00:00 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-25 11:00:01 [main] INFO  c.l.recruitment.PasswordEncodingTest - Started PasswordEncodingTest in 4.027 seconds (JVM running for 4.653)
+2025-12-25 11:00:02 [SpringApplicationShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@3b1bb3ab, started on Thu Dec 25 10:59:57 CST 2025
+2025-12-25 11:23:54 [main] INFO  c.l.r.LabRecruitmentApplication - Starting LabRecruitmentApplication using Java 17.0.17 on DELL with PID 11952 (C:\Users\23717\Desktop\trae3\target\classes started by 23717 in C:\Users\23717\Desktop\trae3)
+2025-12-25 11:23:54 [main] DEBUG c.l.r.LabRecruitmentApplication - Running with Spring Boot v2.7.14, Spring v5.3.29
+2025-12-25 11:23:54 [main] INFO  c.l.r.LabRecruitmentApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-25 11:23:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2025-12-25 11:23:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-25 11:23:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2025-12-25 11:23:54 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-25 11:23:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 618 ms
+2025-12-25 11:23:55 [main] DEBUG c.l.r.config.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyAuthority(\'ROLE_ADMIN\', \'ROLE_SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.getUserList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String)
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.getUserList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String)]] with attributes [[authorize: 'hasAnyAuthority('ROLE_ADMIN', 'ROLE_SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.deleteUser(java.lang.Long)
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.deleteUser(java.lang.Long)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.getAdminList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.getAdminList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.assignAdminToLab(java.util.Map)
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminManagementController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.assignAdminToLab(java.util.Map)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.removeAdminFromLab(java.lang.Long)
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminManagementController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.removeAdminFromLab(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.getLabAdmin(java.lang.Long)
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminManagementController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.getLabAdmin(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.canUserBeAdmin(java.lang.Long)
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminManagementController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.canUserBeAdmin(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.getAllAdminsWithLabs()
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminManagementController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.getAllAdminsWithLabs()]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.audit(java.lang.Long,java.lang.Integer,java.lang.String)
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.audit(java.lang.Long,java.lang.Integer,java.lang.String)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'STUDENT\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.deliver(com.lab.recruitment.dto.DeliveryDTO)
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.deliver(com.lab.recruitment.dto.DeliveryDTO)]] with attributes [[authorize: 'hasRole('STUDENT')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.admit(java.lang.Long)
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.admit(java.lang.Long)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getStatistics(java.lang.Long)
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getStatistics(java.lang.Long)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.Long,java.lang.String,java.lang.String,java.lang.Integer)
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.Long,java.lang.String,java.lang.String,java.lang.Integer)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'STUDENT\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getMyDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Integer)
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getMyDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Integer)]] with attributes [[authorize: 'hasRole('STUDENT')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.createLab(com.lab.recruitment.entity.Lab)
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.LabController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.createLab(com.lab.recruitment.entity.Lab)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.getLabsWithAdmin()
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.LabController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.getLabsWithAdmin()]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.updateLab(java.lang.Long,com.lab.recruitment.entity.Lab)
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.LabController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.updateLab(java.lang.Long,com.lab.recruitment.entity.Lab)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.deleteLab(java.lang.Long)
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.LabController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.deleteLab(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.addAdmin(com.lab.recruitment.entity.User)
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.addAdmin(com.lab.recruitment.entity.User)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getAllAdmins()
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getAllAdmins()]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.updateAdmin(java.lang.Long,com.lab.recruitment.entity.User)
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.updateAdmin(java.lang.Long,com.lab.recruitment.entity.User)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.deleteAdmin(java.lang.Long)
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.deleteAdmin(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getAdminDetail(java.lang.Long)
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getAdminDetail(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getStudentList()
+2025-12-25 11:23:55 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getStudentList()]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:23:55 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/auth/login']
+2025-12-25 11:23:55 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/auth/register']
+2025-12-25 11:23:55 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/user/login']
+2025-12-25 11:23:55 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/user/register']
+2025-12-25 11:23:55 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/auth/login']
+2025-12-25 11:23:55 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/auth/register']
+2025-12-25 11:23:55 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/user/login']
+2025-12-25 11:23:55 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/user/register']
+2025-12-25 11:23:55 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/file/upload']
+2025-12-25 11:23:55 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/uploads/**']
+2025-12-25 11:23:55 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/labs/list']
+2025-12-25 11:23:55 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/labs/{id}']
+2025-12-25 11:23:55 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAuthority('ROLE_SUPER_ADMIN')] for Ant [pattern='/user/admin/**']
+2025-12-25 11:23:55 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAuthority('ROLE_SUPER_ADMIN')] for Ant [pattern='/user/student/list']
+2025-12-25 11:23:55 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAuthority('ROLE_SUPER_ADMIN')] for Ant [pattern='/labs/list-with-admin']
+2025-12-25 11:23:55 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAnyAuthority('ROLE_ADMIN','ROLE_SUPER_ADMIN')] for Ant [pattern='/admin/**']
+2025-12-25 11:23:55 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [authenticated] for any request
+2025-12-25 11:23:55 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5db3d57c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53a50b0a, org.springframework.security.web.context.SecurityContextPersistenceFilter@36ad229b, org.springframework.security.web.header.HeaderWriterFilter@1b24ea2a, org.springframework.web.filter.CorsFilter@74ba6ff5, org.springframework.security.web.authentication.logout.LogoutFilter@2e0fdbe9, com.lab.recruitment.config.JwtAuthenticationFilter@7412a438, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@805e72e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49671897, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@395f52ed, org.springframework.security.web.session.SessionManagementFilter@6070775e, org.springframework.security.web.access.ExceptionTranslationFilter@4b87760e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@b30a50d]
+2025-12-25 11:23:55 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-25 11:23:55 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 38 mappings in 'requestMappingHandlerMapping'
+2025-12-25 11:23:55 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /uploads/**] in 'resourceHandlerMapping'
+2025-12-25 11:23:55 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-25 11:23:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2025-12-25 11:23:55 [main] INFO  c.l.r.LabRecruitmentApplication - Started LabRecruitmentApplication in 1.538 seconds (JVM running for 1.831)
+2025-12-25 11:24:34 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-25 11:24:34 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-25 11:24:34 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-12-25 11:24:34 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-12-25 11:24:34 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-12-25 11:24:34 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@660de57a
+2025-12-25 11:24:34 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@19835cc7
+2025-12-25 11:24:34 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-12-25 11:24:34 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-25 11:24:34 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /auth/login
+2025-12-25 11:24:34 [http-nio-8081-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 11:24:34 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 11:24:34 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /auth/login] with attributes [permitAll]
+2025-12-25 11:24:34 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /auth/login
+2025-12-25 11:24:34 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+2025-12-25 11:24:34 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.AuthController#login(LoginDTO)
+2025-12-25 11:24:34 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LoginDTO(username=3243011131, password=Cjh041217@)]
+2025-12-25 11:24:34 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-25 11:24:35 [http-nio-8081-exec-1] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Access denied for user 'root'@'61.190.198.10'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:81)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at jdk.proxy2/jdk.proxy2.$Proxy97.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at jdk.proxy2/jdk.proxy2.$Proxy73.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:166)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:77)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy74.selectList(Unknown Source)
+	at com.baomidou.mybatisplus.core.mapper.BaseMapper.selectOne(BaseMapper.java:172)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$DefaultMethodInvoker.invoke(MybatisMapperProxy.java:162)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy74.selectOne(Unknown Source)
+	at com.baomidou.mybatisplus.extension.service.impl.ServiceImpl.getOne(ServiceImpl.java:202)
+	at com.baomidou.mybatisplus.extension.service.IService.getOne(IService.java:320)
+	at com.lab.recruitment.service.impl.UserServiceImpl.login(UserServiceImpl.java:99)
+	at com.lab.recruitment.service.impl.UserServiceImpl$$FastClassBySpringCGLIB$$989cdcf5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at com.lab.recruitment.service.impl.UserServiceImpl$$EnhancerBySpringCGLIB$$409ae308.login(<generated>)
+	at com.lab.recruitment.controller.AuthController.login(AuthController.java:130)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:337)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at com.lab.recruitment.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:54)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-12-25 11:24:35 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-25 11:24:36 [http-nio-8081-exec-1] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Access denied for user 'root'@'61.190.198.10'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:81)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at jdk.proxy2/jdk.proxy2.$Proxy97.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at jdk.proxy2/jdk.proxy2.$Proxy73.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:166)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:77)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy81.selectList(Unknown Source)
+	at com.baomidou.mybatisplus.core.mapper.BaseMapper.selectOne(BaseMapper.java:172)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$DefaultMethodInvoker.invoke(MybatisMapperProxy.java:162)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy81.selectOne(Unknown Source)
+	at com.baomidou.mybatisplus.extension.service.impl.ServiceImpl.getOne(ServiceImpl.java:202)
+	at com.baomidou.mybatisplus.extension.service.IService.getOne(IService.java:320)
+	at com.lab.recruitment.service.impl.AdminServiceImpl.login(AdminServiceImpl.java:30)
+	at com.lab.recruitment.service.impl.AdminServiceImpl$$FastClassBySpringCGLIB$$64d1cdbb.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at com.lab.recruitment.service.impl.AdminServiceImpl$$EnhancerBySpringCGLIB$$e01b611a.login(<generated>)
+	at com.lab.recruitment.controller.AuthController.login(AuthController.java:134)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:337)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at com.lab.recruitment.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:54)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-12-25 11:24:36 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 11:24:36 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=500, message=nested exception is org.apache.ibatis.exceptions.PersistenceException: <EOL><EOL>## (truncated)...]
+2025-12-25 11:24:36 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 11:24:36 [http-nio-8081-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 11:24:48 [main] INFO  c.l.r.LabRecruitmentApplication - Starting LabRecruitmentApplication using Java 17.0.17 on DELL with PID 19964 (C:\Users\23717\Desktop\trae3\target\classes started by 23717 in C:\Users\23717\Desktop\trae3)
+2025-12-25 11:24:48 [main] DEBUG c.l.r.LabRecruitmentApplication - Running with Spring Boot v2.7.14, Spring v5.3.29
+2025-12-25 11:24:48 [main] INFO  c.l.r.LabRecruitmentApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-25 11:24:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2025-12-25 11:24:49 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-25 11:24:49 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2025-12-25 11:24:49 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-25 11:24:49 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 613 ms
+2025-12-25 11:24:49 [main] DEBUG c.l.r.config.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.deleteUser(java.lang.Long)
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.deleteUser(java.lang.Long)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.getAdminList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.getAdminList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyAuthority(\'ROLE_ADMIN\', \'ROLE_SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.getUserList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String)
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.getUserList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String)]] with attributes [[authorize: 'hasAnyAuthority('ROLE_ADMIN', 'ROLE_SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.assignAdminToLab(java.util.Map)
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminManagementController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.assignAdminToLab(java.util.Map)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.removeAdminFromLab(java.lang.Long)
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminManagementController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.removeAdminFromLab(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.getLabAdmin(java.lang.Long)
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminManagementController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.getLabAdmin(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.canUserBeAdmin(java.lang.Long)
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminManagementController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.canUserBeAdmin(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.getAllAdminsWithLabs()
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminManagementController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.getAllAdminsWithLabs()]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.audit(java.lang.Long,java.lang.Integer,java.lang.String)
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.audit(java.lang.Long,java.lang.Integer,java.lang.String)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'STUDENT\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.deliver(com.lab.recruitment.dto.DeliveryDTO)
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.deliver(com.lab.recruitment.dto.DeliveryDTO)]] with attributes [[authorize: 'hasRole('STUDENT')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.Long,java.lang.String,java.lang.String,java.lang.Integer)
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.Long,java.lang.String,java.lang.String,java.lang.Integer)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.admit(java.lang.Long)
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.admit(java.lang.Long)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getStatistics(java.lang.Long)
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getStatistics(java.lang.Long)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'STUDENT\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getMyDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Integer)
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getMyDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Integer)]] with attributes [[authorize: 'hasRole('STUDENT')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.createLab(com.lab.recruitment.entity.Lab)
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.LabController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.createLab(com.lab.recruitment.entity.Lab)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.updateLab(java.lang.Long,com.lab.recruitment.entity.Lab)
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.LabController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.updateLab(java.lang.Long,com.lab.recruitment.entity.Lab)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.deleteLab(java.lang.Long)
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.LabController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.deleteLab(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.getLabsWithAdmin()
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.LabController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.getLabsWithAdmin()]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.addAdmin(com.lab.recruitment.entity.User)
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.addAdmin(com.lab.recruitment.entity.User)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getAdminDetail(java.lang.Long)
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getAdminDetail(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getStudentList()
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getStudentList()]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.updateAdmin(java.lang.Long,com.lab.recruitment.entity.User)
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.updateAdmin(java.lang.Long,com.lab.recruitment.entity.User)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getAllAdmins()
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getAllAdmins()]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.deleteAdmin(java.lang.Long)
+2025-12-25 11:24:49 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.deleteAdmin(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 11:24:50 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/auth/login']
+2025-12-25 11:24:50 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/auth/register']
+2025-12-25 11:24:50 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/user/login']
+2025-12-25 11:24:50 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/user/register']
+2025-12-25 11:24:50 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/auth/login']
+2025-12-25 11:24:50 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/auth/register']
+2025-12-25 11:24:50 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/user/login']
+2025-12-25 11:24:50 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/user/register']
+2025-12-25 11:24:50 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/file/upload']
+2025-12-25 11:24:50 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/uploads/**']
+2025-12-25 11:24:50 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/labs/list']
+2025-12-25 11:24:50 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/labs/{id}']
+2025-12-25 11:24:50 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAuthority('ROLE_SUPER_ADMIN')] for Ant [pattern='/user/admin/**']
+2025-12-25 11:24:50 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAuthority('ROLE_SUPER_ADMIN')] for Ant [pattern='/user/student/list']
+2025-12-25 11:24:50 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAuthority('ROLE_SUPER_ADMIN')] for Ant [pattern='/labs/list-with-admin']
+2025-12-25 11:24:50 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAnyAuthority('ROLE_ADMIN','ROLE_SUPER_ADMIN')] for Ant [pattern='/admin/**']
+2025-12-25 11:24:50 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [authenticated] for any request
+2025-12-25 11:24:50 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4a864d4d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d3691e1, org.springframework.security.web.context.SecurityContextPersistenceFilter@268c030f, org.springframework.security.web.header.HeaderWriterFilter@790d8fdd, org.springframework.web.filter.CorsFilter@46a123e4, org.springframework.security.web.authentication.logout.LogoutFilter@6de004f1, com.lab.recruitment.config.JwtAuthenticationFilter@4aa31ffc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@be164d8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b24ea2a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44bc2449, org.springframework.security.web.session.SessionManagementFilter@89caf47, org.springframework.security.web.access.ExceptionTranslationFilter@72fbf94d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@269222ae]
+2025-12-25 11:24:50 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-25 11:24:50 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 38 mappings in 'requestMappingHandlerMapping'
+2025-12-25 11:24:50 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /uploads/**] in 'resourceHandlerMapping'
+2025-12-25 11:24:50 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-25 11:24:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2025-12-25 11:24:50 [main] INFO  c.l.r.LabRecruitmentApplication - Started LabRecruitmentApplication in 1.584 seconds (JVM running for 1.888)
+2025-12-25 11:25:24 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-25 11:25:24 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-25 11:25:24 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-12-25 11:25:24 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-12-25 11:25:24 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-12-25 11:25:24 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@31bae77d
+2025-12-25 11:25:24 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@613167cd
+2025-12-25 11:25:24 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-12-25 11:25:24 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-25 11:25:24 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /auth/login
+2025-12-25 11:25:24 [http-nio-8081-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 11:25:24 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 11:25:24 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /auth/login] with attributes [permitAll]
+2025-12-25 11:25:24 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /auth/login
+2025-12-25 11:25:24 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+2025-12-25 11:25:24 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.AuthController#login(LoginDTO)
+2025-12-25 11:25:24 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LoginDTO(username=3243011131, password=Cjh0412176@)]
+2025-12-25 11:25:24 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-25 11:25:24 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-25 11:25:24 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 11:25:24 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=500, message=管理员账号不存在或已被禁用, data=null)]
+2025-12-25 11:25:24 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 11:25:24 [http-nio-8081-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 11:25:31 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /auth/login
+2025-12-25 11:25:31 [http-nio-8081-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 11:25:31 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 11:25:31 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /auth/login] with attributes [permitAll]
+2025-12-25 11:25:31 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured POST /auth/login
+2025-12-25 11:25:31 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+2025-12-25 11:25:31 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.AuthController#login(LoginDTO)
+2025-12-25 11:25:31 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LoginDTO(username=3243011131, password=Cjh041217@)]
+2025-12-25 11:25:31 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 11:25:31 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=LoginVO(token=eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoic3R1ZGVudCIsInN1Y (truncated)...]
+2025-12-25 11:25:31 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 11:25:31 [http-nio-8081-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 11:25:32 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 11:25:32 [http-nio-8081-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 11:25:32 [http-nio-8081-exec-5] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /labs/list?pageNum=1&pageSize=6] with attributes [permitAll]
+2025-12-25 11:25:32 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 11:25:32 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/labs/list?pageNum=1&pageSize=6", parameters={masked}
+2025-12-25 11:25:32 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.LabController#getLabList(Integer, Integer, String, Integer)
+2025-12-25 11:25:32 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 11:25:32 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@6a12d (truncated)...]
+2025-12-25 11:25:32 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 11:25:32 [http-nio-8081-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 17:07:45 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=32m46s69ms328µs100ns).
+2025-12-25 19:03:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-25 19:03:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-25 19:45:03 [main] INFO  c.l.r.LabRecruitmentApplication - Starting LabRecruitmentApplication using Java 17.0.17 on DELL with PID 14952 (C:\Users\23717\Desktop\trae3\target\classes started by 23717 in C:\Users\23717\Desktop\trae3)
+2025-12-25 19:45:03 [main] DEBUG c.l.r.LabRecruitmentApplication - Running with Spring Boot v2.7.14, Spring v5.3.29
+2025-12-25 19:45:03 [main] INFO  c.l.r.LabRecruitmentApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-25 19:45:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2025-12-25 19:45:04 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-25 19:45:04 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2025-12-25 19:45:04 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-25 19:45:04 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1102 ms
+2025-12-25 19:45:05 [main] DEBUG c.l.r.config.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.getAdminList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.getAdminList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyAuthority(\'ROLE_ADMIN\', \'ROLE_SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.getUserList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String)
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.getUserList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String)]] with attributes [[authorize: 'hasAnyAuthority('ROLE_ADMIN', 'ROLE_SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.deleteUser(java.lang.Long)
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.deleteUser(java.lang.Long)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.getLabAdmin(java.lang.Long)
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminManagementController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.getLabAdmin(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.removeAdminFromLab(java.lang.Long)
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminManagementController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.removeAdminFromLab(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.canUserBeAdmin(java.lang.Long)
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminManagementController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.canUserBeAdmin(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.assignAdminToLab(java.util.Map)
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminManagementController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.assignAdminToLab(java.util.Map)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.getAllAdminsWithLabs()
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.AdminManagementController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminManagementController.getAllAdminsWithLabs()]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.audit(java.lang.Long,java.lang.Integer,java.lang.String)
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.audit(java.lang.Long,java.lang.Integer,java.lang.String)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'STUDENT\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getMyDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Integer)
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getMyDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Integer)]] with attributes [[authorize: 'hasRole('STUDENT')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.Long,java.lang.String,java.lang.String,java.lang.Integer)
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.Long,java.lang.String,java.lang.String,java.lang.Integer)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'STUDENT\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.deliver(com.lab.recruitment.dto.DeliveryDTO)
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.deliver(com.lab.recruitment.dto.DeliveryDTO)]] with attributes [[authorize: 'hasRole('STUDENT')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.admit(java.lang.Long)
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.admit(java.lang.Long)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyRole(\'ADMIN\', \'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getStatistics(java.lang.Long)
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.DeliveryController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getStatistics(java.lang.Long)]] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.createLab(com.lab.recruitment.entity.Lab)
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.LabController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.createLab(com.lab.recruitment.entity.Lab)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.getLabsWithAdmin()
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.LabController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.getLabsWithAdmin()]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.deleteLab(java.lang.Long)
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.LabController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.deleteLab(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.updateLab(java.lang.Long,com.lab.recruitment.entity.Lab)
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.LabController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.LabController.updateLab(java.lang.Long,com.lab.recruitment.entity.Lab)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getStudentList()
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getStudentList()]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.updateAdmin(java.lang.Long,com.lab.recruitment.entity.User)
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.updateAdmin(java.lang.Long,com.lab.recruitment.entity.User)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.deleteAdmin(java.lang.Long)
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.deleteAdmin(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.addAdmin(com.lab.recruitment.entity.User)
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.addAdmin(com.lab.recruitment.entity.User)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getAllAdmins()
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getAllAdmins()]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'SUPER_ADMIN\')") found on specific method: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getAdminDetail(java.lang.Long)
+2025-12-25 19:45:05 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.lab.recruitment.controller.UserController; public com.lab.recruitment.utils.Result com.lab.recruitment.controller.UserController.getAdminDetail(java.lang.Long)]] with attributes [[authorize: 'hasRole('SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:45:05 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/auth/login']
+2025-12-25 19:45:05 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/auth/register']
+2025-12-25 19:45:05 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/user/login']
+2025-12-25 19:45:05 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/user/register']
+2025-12-25 19:45:05 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/auth/login']
+2025-12-25 19:45:05 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/auth/register']
+2025-12-25 19:45:05 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/user/login']
+2025-12-25 19:45:05 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/user/register']
+2025-12-25 19:45:05 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/file/upload']
+2025-12-25 19:45:05 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/uploads/**']
+2025-12-25 19:45:05 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/labs/list']
+2025-12-25 19:45:05 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/labs/{id}']
+2025-12-25 19:45:05 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAuthority('ROLE_SUPER_ADMIN')] for Ant [pattern='/user/admin/**']
+2025-12-25 19:45:05 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAuthority('ROLE_SUPER_ADMIN')] for Ant [pattern='/user/student/list']
+2025-12-25 19:45:05 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAuthority('ROLE_SUPER_ADMIN')] for Ant [pattern='/labs/list-with-admin']
+2025-12-25 19:45:05 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAnyAuthority('ROLE_ADMIN','ROLE_SUPER_ADMIN')] for Ant [pattern='/admin/**']
+2025-12-25 19:45:05 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [authenticated] for any request
+2025-12-25 19:45:05 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39e53bef, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14b275bd, org.springframework.security.web.context.SecurityContextPersistenceFilter@7742a45c, org.springframework.security.web.header.HeaderWriterFilter@6e24ce51, org.springframework.web.filter.CorsFilter@4ed18798, org.springframework.security.web.authentication.logout.LogoutFilter@3dbd7107, com.lab.recruitment.config.JwtAuthenticationFilter@5a1f778, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14fc9bd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ed49a7f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b03cbad, org.springframework.security.web.session.SessionManagementFilter@2fc49538, org.springframework.security.web.access.ExceptionTranslationFilter@7d9c45ee, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@f245bdd]
+2025-12-25 19:45:05 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-25 19:45:05 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 38 mappings in 'requestMappingHandlerMapping'
+2025-12-25 19:45:05 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /uploads/**] in 'resourceHandlerMapping'
+2025-12-25 19:45:05 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-25 19:45:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2025-12-25 19:45:05 [main] INFO  c.l.r.LabRecruitmentApplication - Started LabRecruitmentApplication in 2.433 seconds (JVM running for 2.979)
+2025-12-25 19:45:29 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-25 19:45:29 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-25 19:45:29 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-12-25 19:45:29 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-12-25 19:45:29 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-12-25 19:45:29 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6d2f59fb
+2025-12-25 19:45:29 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@146e6440
+2025-12-25 19:45:29 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-12-25 19:45:29 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-12-25 19:45:29 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 19:45:29 [http-nio-8081-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 19:45:29 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-25 19:45:29 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-25 19:45:29 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /labs/list?pageNum=1&pageSize=6] with attributes [permitAll]
+2025-12-25 19:45:29 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 19:45:29 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/labs/list?pageNum=1&pageSize=6", parameters={masked}
+2025-12-25 19:45:29 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.LabController#getLabList(Integer, Integer, String, Integer)
+2025-12-25 19:45:29 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 19:45:29 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@4783c (truncated)...]
+2025-12-25 19:45:29 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 19:45:29 [http-nio-8081-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 19:46:25 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 19:46:25 [http-nio-8081-exec-6] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 19:46:25 [http-nio-8081-exec-6] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /labs/list?pageNum=1&pageSize=6] with attributes [permitAll]
+2025-12-25 19:46:25 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 19:46:25 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/labs/list?pageNum=1&pageSize=6", parameters={masked}
+2025-12-25 19:46:25 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.LabController#getLabList(Integer, Integer, String, Integer)
+2025-12-25 19:46:25 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 19:46:25 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@68763 (truncated)...]
+2025-12-25 19:46:25 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 19:46:25 [http-nio-8081-exec-6] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 19:56:29 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /auth/login
+2025-12-25 19:56:29 [http-nio-8081-exec-2] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 19:56:29 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 19:56:29 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /auth/login] with attributes [permitAll]
+2025-12-25 19:56:29 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /auth/login
+2025-12-25 19:56:29 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+2025-12-25 19:56:29 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.AuthController#login(LoginDTO)
+2025-12-25 19:56:29 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LoginDTO(username=3243011131, password=Cjh041217@)]
+2025-12-25 19:56:30 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 19:56:30 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=LoginVO(token=eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoic3R1ZGVudCIsInN1Y (truncated)...]
+2025-12-25 19:56:30 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 19:56:30 [http-nio-8081-exec-2] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 19:56:30 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 19:56:30 [http-nio-8081-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 19:56:30 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /labs/list?pageNum=1&pageSize=6] with attributes [permitAll]
+2025-12-25 19:56:30 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 19:56:30 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/labs/list?pageNum=1&pageSize=6", parameters={masked}
+2025-12-25 19:56:30 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.LabController#getLabList(Integer, Integer, String, Integer)
+2025-12-25 19:56:30 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 19:56:30 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@1ade0 (truncated)...]
+2025-12-25 19:56:30 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 19:56:30 [http-nio-8081-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 19:56:32 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /delivery/my?pageNum=1&pageSize=10
+2025-12-25 19:56:32 [http-nio-8081-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 19:56:32 [http-nio-8081-exec-5] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /delivery/my?pageNum=1&pageSize=10] with attributes [authenticated]
+2025-12-25 19:56:32 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /delivery/my?pageNum=1&pageSize=10
+2025-12-25 19:56:32 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/delivery/my?pageNum=1&pageSize=10", parameters={masked}
+2025-12-25 19:56:32 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.DeliveryController#getMyDeliveryList(Integer, Integer, String, Integer)
+2025-12-25 19:56:32 [http-nio-8081-exec-5] DEBUG o.s.s.a.i.a.MethodSecurityInterceptor - Authorized ReflectiveMethodInvocation: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getMyDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Integer); target is of class [com.lab.recruitment.controller.DeliveryController] with attributes [[authorize: 'hasRole('STUDENT')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:56:32 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 19:56:32 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@a08b8 (truncated)...]
+2025-12-25 19:56:32 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 19:56:32 [http-nio-8081-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 19:56:33 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /user/info
+2025-12-25 19:56:33 [http-nio-8081-exec-7] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 19:56:33 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /user/info] with attributes [authenticated]
+2025-12-25 19:56:33 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /user/info
+2025-12-25 19:56:33 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/user/info", parameters={}
+2025-12-25 19:56:33 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.UserController#getUserInfo(HttpServletRequest)
+2025-12-25 19:56:33 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 19:56:33 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=User(id=10, username=3243011131, password=null, realName=程佳豪, ro (truncated)...]
+2025-12-25 19:56:33 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 19:56:33 [http-nio-8081-exec-7] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 19:56:35 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 19:56:35 [http-nio-8081-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 19:56:35 [http-nio-8081-exec-3] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /labs/list?pageNum=1&pageSize=6] with attributes [permitAll]
+2025-12-25 19:56:35 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 19:56:35 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/labs/list?pageNum=1&pageSize=6", parameters={masked}
+2025-12-25 19:56:35 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.LabController#getLabList(Integer, Integer, String, Integer)
+2025-12-25 19:56:35 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 19:56:35 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@5887a (truncated)...]
+2025-12-25 19:56:35 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 19:56:35 [http-nio-8081-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 19:56:43 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /user/info
+2025-12-25 19:56:43 [http-nio-8081-exec-8] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 19:56:43 [http-nio-8081-exec-8] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /user/info] with attributes [authenticated]
+2025-12-25 19:56:43 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /user/info
+2025-12-25 19:56:43 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/user/info", parameters={}
+2025-12-25 19:56:43 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.UserController#getUserInfo(HttpServletRequest)
+2025-12-25 19:56:43 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 19:56:43 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=User(id=10, username=3243011131, password=null, realName=程佳豪, ro (truncated)...]
+2025-12-25 19:56:43 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 19:56:43 [http-nio-8081-exec-8] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 19:57:41 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 19:57:41 [http-nio-8081-exec-9] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 19:57:41 [http-nio-8081-exec-9] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /labs/list?pageNum=1&pageSize=6] with attributes [permitAll]
+2025-12-25 19:57:41 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 19:57:41 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/labs/list?pageNum=1&pageSize=6", parameters={masked}
+2025-12-25 19:57:41 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.LabController#getLabList(Integer, Integer, String, Integer)
+2025-12-25 19:57:41 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 19:57:41 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@619d9 (truncated)...]
+2025-12-25 19:57:41 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 19:57:41 [http-nio-8081-exec-9] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 19:57:52 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /user/info
+2025-12-25 19:57:52 [http-nio-8081-exec-10] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 19:57:52 [http-nio-8081-exec-10] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /user/info] with attributes [authenticated]
+2025-12-25 19:57:52 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /user/info
+2025-12-25 19:57:52 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/user/info", parameters={}
+2025-12-25 19:57:52 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.UserController#getUserInfo(HttpServletRequest)
+2025-12-25 19:57:52 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 19:57:52 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=User(id=10, username=3243011131, password=null, realName=程佳豪, ro (truncated)...]
+2025-12-25 19:57:52 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 19:57:52 [http-nio-8081-exec-10] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 19:57:53 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /delivery/my?pageNum=1&pageSize=10
+2025-12-25 19:57:53 [http-nio-8081-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 19:57:53 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /delivery/my?pageNum=1&pageSize=10] with attributes [authenticated]
+2025-12-25 19:57:53 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /delivery/my?pageNum=1&pageSize=10
+2025-12-25 19:57:53 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/delivery/my?pageNum=1&pageSize=10", parameters={masked}
+2025-12-25 19:57:53 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.DeliveryController#getMyDeliveryList(Integer, Integer, String, Integer)
+2025-12-25 19:57:53 [http-nio-8081-exec-1] DEBUG o.s.s.a.i.a.MethodSecurityInterceptor - Authorized ReflectiveMethodInvocation: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getMyDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Integer); target is of class [com.lab.recruitment.controller.DeliveryController] with attributes [[authorize: 'hasRole('STUDENT')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:57:53 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 19:57:53 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@24801 (truncated)...]
+2025-12-25 19:57:53 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 19:57:53 [http-nio-8081-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 19:57:55 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 19:57:55 [http-nio-8081-exec-6] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 19:57:55 [http-nio-8081-exec-6] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /labs/list?pageNum=1&pageSize=6] with attributes [permitAll]
+2025-12-25 19:57:55 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 19:57:55 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/labs/list?pageNum=1&pageSize=6", parameters={masked}
+2025-12-25 19:57:55 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.LabController#getLabList(Integer, Integer, String, Integer)
+2025-12-25 19:57:55 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 19:57:55 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@29db9 (truncated)...]
+2025-12-25 19:57:55 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 19:57:55 [http-nio-8081-exec-6] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 19:58:08 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /user/info
+2025-12-25 19:58:08 [http-nio-8081-exec-2] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 19:58:08 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /user/info] with attributes [authenticated]
+2025-12-25 19:58:08 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /user/info
+2025-12-25 19:58:08 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/user/info", parameters={}
+2025-12-25 19:58:08 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.UserController#getUserInfo(HttpServletRequest)
+2025-12-25 19:58:08 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 19:58:08 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=User(id=10, username=3243011131, password=null, realName=程佳豪, ro (truncated)...]
+2025-12-25 19:58:08 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 19:58:08 [http-nio-8081-exec-2] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 19:58:39 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /delivery/my?pageNum=1&pageSize=10
+2025-12-25 19:58:39 [http-nio-8081-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 19:58:39 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /delivery/my?pageNum=1&pageSize=10] with attributes [authenticated]
+2025-12-25 19:58:39 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /delivery/my?pageNum=1&pageSize=10
+2025-12-25 19:58:39 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/delivery/my?pageNum=1&pageSize=10", parameters={masked}
+2025-12-25 19:58:39 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.DeliveryController#getMyDeliveryList(Integer, Integer, String, Integer)
+2025-12-25 19:58:39 [http-nio-8081-exec-4] DEBUG o.s.s.a.i.a.MethodSecurityInterceptor - Authorized ReflectiveMethodInvocation: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getMyDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Integer); target is of class [com.lab.recruitment.controller.DeliveryController] with attributes [[authorize: 'hasRole('STUDENT')', filter: 'null', filterTarget: 'null']]
+2025-12-25 19:58:39 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 19:58:39 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@bc868 (truncated)...]
+2025-12-25 19:58:39 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 19:58:39 [http-nio-8081-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 19:58:41 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 19:58:41 [http-nio-8081-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 19:58:41 [http-nio-8081-exec-5] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /labs/list?pageNum=1&pageSize=6] with attributes [permitAll]
+2025-12-25 19:58:41 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 19:58:41 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/labs/list?pageNum=1&pageSize=6", parameters={masked}
+2025-12-25 19:58:41 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.LabController#getLabList(Integer, Integer, String, Integer)
+2025-12-25 19:58:41 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 19:58:41 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@5eb78 (truncated)...]
+2025-12-25 19:58:41 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 19:58:41 [http-nio-8081-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 20:04:48 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 20:04:48 [http-nio-8081-exec-7] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 20:04:48 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /labs/list?pageNum=1&pageSize=6] with attributes [permitAll]
+2025-12-25 20:04:48 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 20:04:48 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/labs/list?pageNum=1&pageSize=6", parameters={masked}
+2025-12-25 20:04:48 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.LabController#getLabList(Integer, Integer, String, Integer)
+2025-12-25 20:04:48 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 20:04:48 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@77f51 (truncated)...]
+2025-12-25 20:04:48 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 20:04:48 [http-nio-8081-exec-7] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 20:04:48 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 20:04:48 [http-nio-8081-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 20:04:48 [http-nio-8081-exec-3] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /labs/list?pageNum=1&pageSize=6] with attributes [permitAll]
+2025-12-25 20:04:48 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 20:04:48 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/labs/list?pageNum=1&pageSize=6", parameters={masked}
+2025-12-25 20:04:48 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.LabController#getLabList(Integer, Integer, String, Integer)
+2025-12-25 20:04:48 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 20:04:48 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@69b2e (truncated)...]
+2025-12-25 20:04:48 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 20:04:48 [http-nio-8081-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 20:04:57 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m27s650ms265µs).
+2025-12-25 20:08:03 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 20:08:03 [http-nio-8081-exec-8] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 20:08:03 [http-nio-8081-exec-8] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /labs/list?pageNum=1&pageSize=6] with attributes [permitAll]
+2025-12-25 20:08:03 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 20:08:03 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/labs/list?pageNum=1&pageSize=6", parameters={masked}
+2025-12-25 20:08:03 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.LabController#getLabList(Integer, Integer, String, Integer)
+2025-12-25 20:08:03 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 20:08:03 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@78df3 (truncated)...]
+2025-12-25 20:08:03 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 20:08:03 [http-nio-8081-exec-8] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 20:08:03 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 20:08:03 [http-nio-8081-exec-9] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 20:08:03 [http-nio-8081-exec-9] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /labs/list?pageNum=1&pageSize=6] with attributes [permitAll]
+2025-12-25 20:08:03 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 20:08:03 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/labs/list?pageNum=1&pageSize=6", parameters={masked}
+2025-12-25 20:08:03 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.LabController#getLabList(Integer, Integer, String, Integer)
+2025-12-25 20:08:03 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 20:08:03 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@511e6 (truncated)...]
+2025-12-25 20:08:03 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 20:08:03 [http-nio-8081-exec-9] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 20:08:27 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59s440ms213µs).
+2025-12-25 20:09:24 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 20:09:24 [http-nio-8081-exec-10] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 20:09:24 [http-nio-8081-exec-10] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /labs/list?pageNum=1&pageSize=6] with attributes [permitAll]
+2025-12-25 20:09:24 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 20:09:24 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/labs/list?pageNum=1&pageSize=6", parameters={masked}
+2025-12-25 20:09:24 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.LabController#getLabList(Integer, Integer, String, Integer)
+2025-12-25 20:09:24 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 20:09:24 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@47fc4 (truncated)...]
+2025-12-25 20:09:24 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 20:09:24 [http-nio-8081-exec-10] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 20:34:07 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /delivery/my?pageNum=1&pageSize=10
+2025-12-25 20:34:07 [http-nio-8081-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 20:34:07 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /delivery/my?pageNum=1&pageSize=10] with attributes [authenticated]
+2025-12-25 20:34:07 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /delivery/my?pageNum=1&pageSize=10
+2025-12-25 20:34:07 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/delivery/my?pageNum=1&pageSize=10", parameters={masked}
+2025-12-25 20:34:07 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.DeliveryController#getMyDeliveryList(Integer, Integer, String, Integer)
+2025-12-25 20:34:07 [http-nio-8081-exec-1] DEBUG o.s.s.a.i.a.MethodSecurityInterceptor - Authorized ReflectiveMethodInvocation: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getMyDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Integer); target is of class [com.lab.recruitment.controller.DeliveryController] with attributes [[authorize: 'hasRole('STUDENT')', filter: 'null', filterTarget: 'null']]
+2025-12-25 20:34:07 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 20:34:07 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@b1f2b (truncated)...]
+2025-12-25 20:34:07 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 20:34:07 [http-nio-8081-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 20:34:08 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /user/info
+2025-12-25 20:34:08 [http-nio-8081-exec-6] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 20:34:08 [http-nio-8081-exec-6] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /user/info] with attributes [authenticated]
+2025-12-25 20:34:08 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /user/info
+2025-12-25 20:34:08 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/user/info", parameters={}
+2025-12-25 20:34:08 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.UserController#getUserInfo(HttpServletRequest)
+2025-12-25 20:34:08 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 20:34:08 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=User(id=10, username=3243011131, password=null, realName=程佳豪, ro (truncated)...]
+2025-12-25 20:34:08 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 20:34:08 [http-nio-8081-exec-6] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 20:34:09 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 20:34:09 [http-nio-8081-exec-2] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 20:34:09 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /labs/list?pageNum=1&pageSize=6] with attributes [permitAll]
+2025-12-25 20:34:09 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 20:34:09 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/labs/list?pageNum=1&pageSize=6", parameters={masked}
+2025-12-25 20:34:09 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.LabController#getLabList(Integer, Integer, String, Integer)
+2025-12-25 20:34:09 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 20:34:09 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@43486 (truncated)...]
+2025-12-25 20:34:09 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 20:34:09 [http-nio-8081-exec-2] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 20:34:10 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /user/info
+2025-12-25 20:34:10 [http-nio-8081-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 20:34:10 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /user/info] with attributes [authenticated]
+2025-12-25 20:34:10 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /user/info
+2025-12-25 20:34:10 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/user/info", parameters={}
+2025-12-25 20:34:10 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.UserController#getUserInfo(HttpServletRequest)
+2025-12-25 20:34:10 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 20:34:10 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=User(id=10, username=3243011131, password=null, realName=程佳豪, ro (truncated)...]
+2025-12-25 20:34:10 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 20:34:10 [http-nio-8081-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 20:34:11 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 20:34:11 [http-nio-8081-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 20:34:11 [http-nio-8081-exec-5] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /labs/list?pageNum=1&pageSize=6] with attributes [permitAll]
+2025-12-25 20:34:11 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /labs/list?pageNum=1&pageSize=6
+2025-12-25 20:34:11 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/labs/list?pageNum=1&pageSize=6", parameters={masked}
+2025-12-25 20:34:11 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.LabController#getLabList(Integer, Integer, String, Integer)
+2025-12-25 20:34:11 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 20:34:11 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@516a6 (truncated)...]
+2025-12-25 20:34:11 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 20:34:11 [http-nio-8081-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 20:34:22 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing POST /auth/login
+2025-12-25 20:34:22 [http-nio-8081-exec-7] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 20:34:22 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 20:34:22 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /auth/login] with attributes [permitAll]
+2025-12-25 20:34:22 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured POST /auth/login
+2025-12-25 20:34:22 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+2025-12-25 20:34:22 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.AuthController#login(LoginDTO)
+2025-12-25 20:34:22 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LoginDTO(username=super_admin, password=123456)]
+2025-12-25 20:34:22 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 20:34:22 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=LoginVO(token=eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoic3VwZXJfYWRtaW4iL (truncated)...]
+2025-12-25 20:34:22 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 20:34:22 [http-nio-8081-exec-7] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 20:34:23 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /labs/list?pageNum=1&pageSize=1
+2025-12-25 20:34:23 [http-nio-8081-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 20:34:23 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /admin/users?pageNum=1&pageSize=5
+2025-12-25 20:34:23 [http-nio-8081-exec-8] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 20:34:23 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /delivery/list?pageNum=1&pageSize=5
+2025-12-25 20:34:23 [http-nio-8081-exec-9] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 20:34:23 [http-nio-8081-exec-8] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /admin/users?pageNum=1&pageSize=5] with attributes [hasAnyAuthority('ROLE_ADMIN','ROLE_SUPER_ADMIN')]
+2025-12-25 20:34:23 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /admin/users?pageNum=1&pageSize=5
+2025-12-25 20:34:23 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/admin/users?pageNum=1&pageSize=5", parameters={masked}
+2025-12-25 20:34:23 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.AdminController#getUserList(Integer, Integer, String, String, String)
+2025-12-25 20:34:23 [http-nio-8081-exec-9] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /delivery/list?pageNum=1&pageSize=5] with attributes [authenticated]
+2025-12-25 20:34:23 [http-nio-8081-exec-8] DEBUG o.s.s.a.i.a.MethodSecurityInterceptor - Authorized ReflectiveMethodInvocation: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.getUserList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String); target is of class [com.lab.recruitment.controller.AdminController] with attributes [[authorize: 'hasAnyAuthority('ROLE_ADMIN', 'ROLE_SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 20:34:23 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /delivery/list?pageNum=1&pageSize=5
+2025-12-25 20:34:23 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/delivery/list?pageNum=1&pageSize=5", parameters={masked}
+2025-12-25 20:34:23 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.DeliveryController#getDeliveryList(Integer, Integer, Long, String, String, Integer)
+2025-12-25 20:34:23 [http-nio-8081-exec-3] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /labs/list?pageNum=1&pageSize=1] with attributes [permitAll]
+2025-12-25 20:34:23 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /labs/list?pageNum=1&pageSize=1
+2025-12-25 20:34:23 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/labs/list?pageNum=1&pageSize=1", parameters={masked}
+2025-12-25 20:34:23 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.LabController#getLabList(Integer, Integer, String, Integer)
+2025-12-25 20:34:23 [http-nio-8081-exec-9] DEBUG o.s.s.a.i.a.MethodSecurityInterceptor - Authorized ReflectiveMethodInvocation: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.Long,java.lang.String,java.lang.String,java.lang.Integer); target is of class [com.lab.recruitment.controller.DeliveryController] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 20:34:23 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 20:34:23 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@1a644 (truncated)...]
+2025-12-25 20:34:23 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 20:34:23 [http-nio-8081-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 20:34:23 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 20:34:23 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@484ce (truncated)...]
+2025-12-25 20:34:23 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 20:34:23 [http-nio-8081-exec-9] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 20:34:23 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 20:34:23 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@776e0 (truncated)...]
+2025-12-25 20:34:23 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 20:34:23 [http-nio-8081-exec-8] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 20:34:23 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /admin/users?pageNum=1&pageSize=1
+2025-12-25 20:34:23 [http-nio-8081-exec-10] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 20:34:23 [http-nio-8081-exec-10] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /admin/users?pageNum=1&pageSize=1] with attributes [hasAnyAuthority('ROLE_ADMIN','ROLE_SUPER_ADMIN')]
+2025-12-25 20:34:23 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /admin/users?pageNum=1&pageSize=1
+2025-12-25 20:34:23 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/admin/users?pageNum=1&pageSize=1", parameters={masked}
+2025-12-25 20:34:23 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.AdminController#getUserList(Integer, Integer, String, String, String)
+2025-12-25 20:34:23 [http-nio-8081-exec-10] DEBUG o.s.s.a.i.a.MethodSecurityInterceptor - Authorized ReflectiveMethodInvocation: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.AdminController.getUserList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String); target is of class [com.lab.recruitment.controller.AdminController] with attributes [[authorize: 'hasAnyAuthority('ROLE_ADMIN', 'ROLE_SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 20:34:23 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 20:34:23 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@191a3 (truncated)...]
+2025-12-25 20:34:23 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 20:34:23 [http-nio-8081-exec-10] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 20:34:23 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /delivery/list?pageNum=1&pageSize=1
+2025-12-25 20:34:23 [http-nio-8081-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 20:34:23 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /delivery/list?pageNum=1&pageSize=1] with attributes [authenticated]
+2025-12-25 20:34:23 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /delivery/list?pageNum=1&pageSize=1
+2025-12-25 20:34:23 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/delivery/list?pageNum=1&pageSize=1", parameters={masked}
+2025-12-25 20:34:23 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.DeliveryController#getDeliveryList(Integer, Integer, Long, String, String, Integer)
+2025-12-25 20:34:23 [http-nio-8081-exec-1] DEBUG o.s.s.a.i.a.MethodSecurityInterceptor - Authorized ReflectiveMethodInvocation: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.Long,java.lang.String,java.lang.String,java.lang.Integer); target is of class [com.lab.recruitment.controller.DeliveryController] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 20:34:23 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 20:34:23 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@74810 (truncated)...]
+2025-12-25 20:34:23 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 20:34:23 [http-nio-8081-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 20:34:23 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /delivery/list?pageNum=1&pageSize=1&auditStatus=0
+2025-12-25 20:34:23 [http-nio-8081-exec-6] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 20:34:23 [http-nio-8081-exec-6] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /delivery/list?pageNum=1&pageSize=1&auditStatus=0] with attributes [authenticated]
+2025-12-25 20:34:23 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /delivery/list?pageNum=1&pageSize=1&auditStatus=0
+2025-12-25 20:34:23 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/delivery/list?pageNum=1&pageSize=1&auditStatus=0", parameters={masked}
+2025-12-25 20:34:23 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.DeliveryController#getDeliveryList(Integer, Integer, Long, String, String, Integer)
+2025-12-25 20:34:23 [http-nio-8081-exec-6] DEBUG o.s.s.a.i.a.MethodSecurityInterceptor - Authorized ReflectiveMethodInvocation: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.Long,java.lang.String,java.lang.String,java.lang.Integer); target is of class [com.lab.recruitment.controller.DeliveryController] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 20:34:23 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 20:34:23 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@94e2a (truncated)...]
+2025-12-25 20:34:23 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 20:34:23 [http-nio-8081-exec-6] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2025-12-25 20:34:24 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /delivery/list?pageNum=1&pageSize=10
+2025-12-25 20:34:24 [http-nio-8081-exec-2] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2025-12-25 20:34:24 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /delivery/list?pageNum=1&pageSize=10] with attributes [authenticated]
+2025-12-25 20:34:24 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /delivery/list?pageNum=1&pageSize=10
+2025-12-25 20:34:24 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/delivery/list?pageNum=1&pageSize=10", parameters={masked}
+2025-12-25 20:34:24 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lab.recruitment.controller.DeliveryController#getDeliveryList(Integer, Integer, Long, String, String, Integer)
+2025-12-25 20:34:24 [http-nio-8081-exec-2] DEBUG o.s.s.a.i.a.MethodSecurityInterceptor - Authorized ReflectiveMethodInvocation: public com.lab.recruitment.utils.Result com.lab.recruitment.controller.DeliveryController.getDeliveryList(java.lang.Integer,java.lang.Integer,java.lang.Long,java.lang.String,java.lang.String,java.lang.Integer); target is of class [com.lab.recruitment.controller.DeliveryController] with attributes [[authorize: 'hasAnyRole('ADMIN', 'SUPER_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-25 20:34:24 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-12-25 20:34:24 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@6d278 (truncated)...]
+2025-12-25 20:34:24 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 20:34:24 [http-nio-8081-exec-2] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request

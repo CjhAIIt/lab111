@@ -1,0 +1,2 @@
+UPDATE t_user SET password = '$2a$10$N9qo8uLOickgx2ZMRZoMye.MrqJp4d2z6C5s/KVXc1xvq7Q/QQjyO' WHERE username = 'ai_admin';
+UPDATE t_user SET password = '$2a$10$N9qo8uLOickgx2ZMRZoMye.MrqJp4d2z6C5s/KVXc1xvq7Q/QQjyO' WHERE username = 'super_admin';
